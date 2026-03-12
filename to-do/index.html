@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema ToDo List</title>
+    <link rel="stylesheet" href="../to-do/css/style.css">
+</head>
+<body>
+    <h1>Sistema de Lista de Tarefas</h1>
+    <div>
+        
+        <form id="formToDo">
+            <input type="hidden" id="index"> <!--usado para quando for editar um tarefa existente, hidden faz o usado não ver o campo na tela-->
+            <input type="text" id="tituloTarefa" placeholder="Título da Tarefa" required>
+            <textarea type="text" id="descricao" cols="20" rows="5" minlength="0" maxlength="100" placeholder="Descrição da Tarefa..." required></textarea>
+            <input type="date" id="data" required>
+            
+            <select id="prioridade" required>
+                <option value="" disabled selected>Prioridade</option>            
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+            </select>
+            <button type="submit">Salvar</button>
+        </form>
+        <br>
+        <input type="text" id="buscar" placeholder="Buscar Tarefa...">
+        <button onclick="buscarTarefa()">Buscar</button>
+        <button onclick="listarTarefas()">Mostrar tarefas</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Descrição</th>
+                    <th>Prioridade</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaTarefas"></tbody>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
