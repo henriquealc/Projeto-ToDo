@@ -106,7 +106,6 @@ function buscarTarefa(){
                 <td>${tarefa.prioridade}</td>
                 <td>${tarefa.data}</td>
                 <td>${tarefa.status}</td>
-                
                 <td>
                     <button onclick="editarTarefa(${index})">Editar</button>
                     <button onclick="excluirTarefa(${index})">Excluir</button>
