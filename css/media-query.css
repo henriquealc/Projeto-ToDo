@@ -15,7 +15,7 @@ Grandes telas: acima de 1200px
         width: 100vw;
         height: 100vh;
         background-color: #EDEFF2;
-        background-image: url(./img/background-tablet.jpg);
+        background-image: url(../img/background-tablet.jpg);
         background-size: cover;
         background-position: center center;
     }
@@ -27,7 +27,7 @@ Grandes telas: acima de 1200px
     body{
         width: 100vw;
         height: 100vh;
-        background-image: url(./img/background-projeto-to-do.jpg);
+        background-image: url(../img/background-projeto-to-do.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -48,7 +48,7 @@ Grandes telas: acima de 1200px
     body{
         width: 100vw;
         height: 100vh;
-        background: url(./img/background-projeto-to-do.jpg);
+        background: url(../img/background-projeto-to-do.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
