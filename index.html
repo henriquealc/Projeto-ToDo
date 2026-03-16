@@ -6,6 +6,8 @@
     <title>Sistema ToDo List</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="media-query.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--link para carregar os simbolos-->
 </head>
 <body>
     <main>
@@ -13,14 +15,14 @@
         <form id="formToDo">
             <input type="hidden" id="index"> <!--usado para quando for editar um tarefa existente, hidden faz o usuario não ver o campo na tela-->
             <div class="campo">
-            <input type="text" id="tituloTarefa" placeholder="Título da Tarefa" required>
+            <input type="text" id="tituloTarefa" placeholder=" Título da Tarefa" required>
             </div>
 
             <div class="campo">
-            <textarea type="text" id="descricao" cols="20" rows="5" minlength="0" maxlength="100" placeholder="Descrição da Tarefa..." required></textarea>
+            <textarea type="text" id="descricao" cols="20" rows="5" maxlength="100" placeholder=" Descrição da Tarefa..." required></textarea>
             </div>
             
-            <input type="date" id="data" required>
+            <input type="date" title="Data" id="data" required>
             
             <select id="prioridade" required>
                 <option value="" disabled selected>Prioridade</option>            
@@ -28,26 +30,31 @@
                 <option value="media">Média</option>
                 <option value="alta">Alta</option>
             </select>
-            <button type="submit">Salvar</button>
+            <button type="submit" title="Salvar"><i class="fa-solid fa-plus"></i></button>
         </form>
-        <br>
-        <input type="text" id="buscar" placeholder="Buscar Tarefa...">
-        <button onclick="buscarTarefa()">Buscar</button>
-        <button onclick="listarTarefas()">Mostrar tarefas</button>
 
-        <table class="tabela">
-            <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Descrição</th>
-                    <th>Prioridade</th>
-                    <th>Data</th>
-                    <th>Status</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody id="tabelaTarefas"></tbody>
-        </table>
+        <div class="buscar-tarefa">
+        <input type="text" id="buscar" placeholder=" Buscar Tarefa...">
+        <button onclick="buscarTarefa()" title="Buscar Tarefa"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button onclick="listarTarefas()" title="Listar Tarefas"><i class="fa-solid fa-list"></i></button>
+        </div>
+
+        <p id="mensagem"></p>
+        <div class="responsive-table">
+            <table class="tabela">
+                <thead id="cabecalhoTabela">
+                    <tr>
+                        <th>Título</th>
+                        <th>Descrição</th>
+                        <th>Prioridade</th>
+                        <th>Data</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabelaTarefas"></tbody>
+            </table>
+        </div>
     </main>
     <script src="js/script.js"></script>
 </body>

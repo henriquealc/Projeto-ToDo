@@ -43,22 +43,40 @@ document.getElementById("formToDo").reset();// Limpa o formulário
 
 function listarTarefas(){
     let tabela = document.getElementById("tabelaTarefas");
+    let cabecalho = document.getElementById("cabecalhoTabela")
+    let mensagem = document.getElementById("mensagem");
     tabela.innerHTML= ""; // Limpa a tabela antes de preencher
+
+
+    // Se não ouver tarefas o cabeçalho não aparece
+    // Se não houver tarefas
+    if(tarefas.length === 0){
+        cabecalho.style.display = "none";
+        mensagem.innerHTML = "Não há tarefas cadastradas.";
+        return;
+    }
+
+    // Se tiver alguma tarefa ele aparecera
+    mensagem.innerHTML = "";
+    cabecalho.style.display = "table-header-group";
 
     // Percorre as tarefas cadastradas
     tarefas.forEach((tarefa, index)=>{
+
+        let dataFormata = new Date(tarefa.data).toLocaleDateString("pt-BR")
+
         tabela.innerHTML += `
         <tr>
             <td>${tarefa.tituloTarefa}</td>
             <td>${tarefa.descricao}</td>
             <td>${tarefa.prioridade}</td>
-            <td>${tarefa.data}</td>
+            <td>${dataFormata}</td>
             <td>${tarefa.status}</td>
 
             <td>
-                <button onclick="editarTarefa(${index})">Editar</button>
-                <button onclick="excluirTarefa(${index})">Excluir</button>
-                <button onclick="concluirTarefa(${index})">Concluir</button>
+                <button onclick="editarTarefa(${index})" title="Editar"><i class="fa-solid fa-pen"></i></button>
+                <button onclick="excluirTarefa(${index})" title="Excluir"><i class="fa-solid fa-trash"></i></button>
+                <button onclick="concluirTarefa(${index})" title="Concluir"><i class="fa-solid fa-check"></i></button>
             </td>
         </tr>
         `

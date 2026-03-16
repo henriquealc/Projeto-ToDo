@@ -32,6 +32,15 @@ Grandes telas: acima de 1200px
         background-size: cover;
         background-position: center center;
     }
+
+    .responsive-table{
+    width: 70vw;
+    margin: auto;
+    overflow-x: auto;
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 10px;
+    margin-top: 10px;
+    }
 }
 
 /*Grandes telas*/
@@ -44,4 +53,14 @@ Grandes telas: acima de 1200px
         background-size: cover;
         background-position: center center;
     }
+
+    .responsive-table{
+    width: 70vw;
+    margin: auto;
+    overflow-x: auto;
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 10px;
+    margin-top: 10px;
+    }
+    
 }

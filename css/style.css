@@ -32,28 +32,63 @@ main{
 .campo > input{
     width: 300px;
     height: 30px;
+    border-radius: 5px;
+    border: 2px solid black;
 } 
 
 textarea {
     resize: none; /*bloqueia o movimento do textarea*/
     width: 300px;
+    border-radius: 5px;
+    border: 2px solid black;
 }
 
+
+
 button {
+    border: none;
     width: 95px;
     height: 25px;
     background-color: black;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin: 1px;
+    margin-left: 3px;
 }
 
-/*cor e padding da tabela*/
+button:hover{
+    background-color: gray;   
+}
+
+.buscar-tarefa{
+    padding: 10px;
+}
+
+.buscar-tarefa > input{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 25px;
+}
+
+/*cor da letra e padding da tabela*/
 .tabela > thead > tr > th{
     color: black;
     padding: 10px;
 }
 
+/*deixa a tabela responsiva*/
+.responsive-table{
+    width: 100%;
+    margin: auto;
+    overflow-x: auto;
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+/*Faz os titulos da tabela ficar centralizado*/
 table{
     margin: auto; /*centraliza a tabela*/
 }
