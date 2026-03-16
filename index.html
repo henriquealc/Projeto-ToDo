@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema ToDo List</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="media-query.css">
 </head>
 <body>
-    <h1>Sistema de Lista de Tarefas</h1>
-    <div>
-        
+    <main>
+        <h1>Sistema de Lista de Tarefas</h1>
         <form id="formToDo">
-            <input type="hidden" id="index"> <!--usado para quando for editar um tarefa existente, hidden faz o usado não ver o campo na tela-->
+            <input type="hidden" id="index"> <!--usado para quando for editar um tarefa existente, hidden faz o usuario não ver o campo na tela-->
+            <div class="campo">
             <input type="text" id="tituloTarefa" placeholder="Título da Tarefa" required>
+            </div>
+
+            <div class="campo">
             <textarea type="text" id="descricao" cols="20" rows="5" minlength="0" maxlength="100" placeholder="Descrição da Tarefa..." required></textarea>
+            </div>
+            
             <input type="date" id="data" required>
             
             <select id="prioridade" required>
@@ -22,14 +28,14 @@
                 <option value="media">Média</option>
                 <option value="alta">Alta</option>
             </select>
-            <button type="submit">+</button>
+            <button type="submit">Salvar</button>
         </form>
         <br>
         <input type="text" id="buscar" placeholder="Buscar Tarefa...">
         <button onclick="buscarTarefa()">Buscar</button>
         <button onclick="listarTarefas()">Mostrar tarefas</button>
 
-        <table>
+        <table class="tabela">
             <thead>
                 <tr>
                     <th>Título</th>
@@ -42,7 +48,7 @@
             </thead>
             <tbody id="tabelaTarefas"></tbody>
         </table>
-    </div>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>
