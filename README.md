@@ -48,3 +48,28 @@ O projeto foi pensado para diferentes tamanhos de tela:
 ---
 
 ## 📂 Estrutura do projeto
+📁 EasyTask
+┣ 📁 css
+┃ ┣ 📄 style.css
+┃ ┗ 📄 media-query.css
+┣ 📁 js
+┃ ┗ 📄 script.js
+┣ 📁 img
+┃ ┗ 📄 demo.gif
+┣ 📄 index.htm
+
+---
+
+📌 Observações
+- 💾 Os dados são salvos no LocalStorage
+- 🌐 Não precisa de internet
+- 🎓 Projeto feito para estudo
+
+---
+
+👨‍💻 Autor
+Henrique Alcântara
+
+---
+⭐ Contribuição
+Sinta-se à vontade para melhorar o projeto!
