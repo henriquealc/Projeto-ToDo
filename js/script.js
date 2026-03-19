@@ -125,9 +125,9 @@ function buscarTarefa(){
                 <td>${tarefa.data}</td>
                 <td>${tarefa.status}</td>
                 <td>
-                    <button onclick="editarTarefa(${index})">Editar</button>
-                    <button onclick="excluirTarefa(${index})">Excluir</button>
-                    <button onclick="concluirTarefa(${index})">Concluir</button>
+                    <button onclick="editarTarefa(${index})" title="Editar"><i class="fa-solid fa-pen"></i></button>
+                    <button onclick="excluirTarefa(${index})" title="Excluir"><i class="fa-solid fa-trash"></i></button>
+                    <button onclick="concluirTarefa(${index})" title="Concluir"><i class="fa-solid fa-check"></i></button>
                 </td>
             </tr>
         `
