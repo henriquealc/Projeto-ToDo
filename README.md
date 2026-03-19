@@ -1,85 +1,56 @@
-# Projeto-ToDo
-📝 EasyTask
+# 📝 EasyTask
 
-✅ Organize suas tarefas de forma simples e rápida
+> ✅ Organize suas tarefas de forma simples, rápida e prática
 
-🎬 Demonstração
+---
 
-💡 Dica: você pode gravar um GIF usando o OBS ou ScreenToGif
+## 🎬 Demonstração
 
-💡 Sobre o projeto
+![Preview do projeto](./img/demo.gif)
 
-O EasyTask é uma aplicação de lista de tarefas desenvolvida para praticar conceitos básicos de front-end.
+---
 
-📚 Aprendizados:
+## 💡 Sobre o projeto
 
-📌 Manipulação do DOM
+O **EasyTask** é uma aplicação de lista de tarefas (ToDo List) desenvolvida para praticar conceitos básicos de front-end.
 
-💾 Uso do LocalStorage
+### 📚 O que foi praticado:
 
-🎨 Estilização com CSS
+- 📌 Manipulação do DOM  
+- 💾 Uso do LocalStorage  
+- 🎨 Estilização com CSS  
+- 📱 Responsividade com Media Queries  
 
-📱 Responsividade
+---
 
-⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 
-➕ Adicionar tarefas
+- ➕ Adicionar tarefas  
+- ✏️ Editar tarefas  
+- 🗑️ Excluir tarefas  
+- ✅ Marcar como concluída  
+- 🔍 Buscar tarefas  
+- 💾 Salvamento automático no navegador  
 
-✏️ Editar tarefas
+---
 
-🗑️ Excluir tarefas
+## 🖥️ Tecnologias utilizadas
 
-✅ Marcar como concluída
+- 🌐 HTML5  
+- 🎨 CSS3  
+- ⚙️ JavaScript  
+- ⭐ Font Awesome (ícones)  
 
-🔍 Buscar tarefas
+---
 
-💾 Salvamento automático no navegador
+## 📱 Responsividade
 
-🖥️ Tecnologias
+O projeto foi pensado para diferentes tamanhos de tela:
 
-🌐 HTML5
+- 📱 Mobile  
+- 💻 Desktop  
+- 🖥️ Telas grandes  
 
-🎨 CSS3
+---
 
-⚙️ JavaScript
-
-⭐ Font Awesome
-
-📱 Responsividade
-
-✔️ Adaptado para diferentes telas:
-
-📱 Mobile
-
-💻 Desktop
-
-🖥️ Telas grandes
-
-📂 Estrutura do projeto
-📁 EasyTask
- ┣ 📁 css
- ┃ ┣ style.css
- ┃ ┗ media-query.css
- ┣ 📁 js
- ┃ ┗ script.js
- ┣ 📁 img
- ┃ ┗ demo.gif
- ┣ 📄 index.html
-🚀 Como executar
-# Clone o repositório
-git clone https://github.com/seu-usuario/easytask.git
-
-# Abra o arquivo
-index.html
-📌 Observações
-
-💾 Dados salvos no LocalStorage
-
-🌐 Não precisa de backend
-
-🎓 Projeto focado em aprendizado
-
-👨‍💻 Autor
-
-Henrique Alcântara
-Link da page: https://henriquealc.github.io/Projeto-ToDo/
+## 📂 Estrutura do projeto
