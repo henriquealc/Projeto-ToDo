@@ -118,13 +118,15 @@ function buscarTarefa(){
     tabela.innerHTML = "";
 
     tarefas.forEach((tarefa, index)=>{
+        let dataFormata = new Date(tarefa.data).toLocaleDateString("pt-BR")
+
         if (tarefa.tituloTarefa.toLowerCase().includes(termo)) // Verifica se o título da tarefa contém o texto pesquisado
             tabela.innerHTML += `
             <tr>
                 <td>${tarefa.tituloTarefa}</td>
                 <td>${tarefa.descricao}</td>
                 <td>${tarefa.prioridade}</td>
-                <td>${tarefa.data}</td>
+                <td>${dataFormata}</td>
                 <td>${tarefa.status}</td>
                 <td>
                     <button onclick="editarTarefa(${index})" title="Editar"><i class="fa-solid fa-pen"></i></button>
