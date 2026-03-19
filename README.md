@@ -49,14 +49,14 @@ O projeto foi pensado para diferentes tamanhos de tela:
 
 ## 📂 Estrutura do projeto
 📁 EasyTask
-┣ 📁 css
-┃ ┣ 📄 style.css
-┃ ┗ 📄 media-query.css
-┣ 📁 js
-┃ ┗ 📄 script.js
-┣ 📁 img
-┃ ┗ 📄 demo.gif
-┣ 📄 index.htm
+ ┣ 📁 css
+ ┃ ┣ 📄 style.css
+ ┃ ┗ 📄 media-query.css
+ ┣ 📁 js
+ ┃ ┗ 📄 script.js
+ ┣ 📁 img
+ ┃ ┗ 📄 demo.gif
+ ┣ 📄 index.html
 
 ---
 
