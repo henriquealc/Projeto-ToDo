@@ -4,12 +4,6 @@
 
 ---
 
-## 🎬 Demonstração
-
-![Preview do projeto](./img/demo.gif)
-
----
-
 ## 💡 Sobre o projeto
 
 O **EasyTask** é uma aplicação de lista de tarefas (ToDo List) desenvolvida para praticar conceitos básicos de front-end.
