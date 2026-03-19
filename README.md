@@ -60,3 +60,5 @@ Henrique Alcântara
 ---
 ⭐ Contribuição
 Sinta-se à vontade para melhorar o projeto!
+---
+Link do EasyTask: https://henriquealc.github.io/Projeto-ToDo/
