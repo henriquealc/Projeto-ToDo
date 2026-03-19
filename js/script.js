@@ -31,7 +31,7 @@ if (index === ""){
     document.getElementById("index").value = "";
 }
 
-salvarLocal();
+salvarLocal(); // Salva no navegador
 
 // Atualiza a tabela
 listarTarefas();
@@ -41,6 +41,7 @@ document.getElementById("formToDo").reset();// Limpa o formulário
 
 }
 
+// função para mostrar as tarefas na tela
 function listarTarefas(){
     let tabela = document.getElementById("tabelaTarefas");
     let cabecalho = document.getElementById("cabecalhoTabela")
@@ -57,14 +58,15 @@ function listarTarefas(){
     }
 
     // Se tiver alguma tarefa ele aparecera
-    mensagem.innerHTML = "";
-    cabecalho.style.display = "table-header-group";
+    mensagem.innerHTML = ""; // Limpa mensagem
+    cabecalho.style.display = "table-header-group"; // Mostra o cabeçalho
 
     // Percorre as tarefas cadastradas
     tarefas.forEach((tarefa, index)=>{
 
         let dataFormata = new Date(tarefa.data).toLocaleDateString("pt-BR")
-
+        
+        // Adiciona uma linha na tabela
         tabela.innerHTML += `
         <tr>
             <td>${tarefa.tituloTarefa}</td>
@@ -85,7 +87,7 @@ function listarTarefas(){
 
 
 function editarTarefa(index){
-    let tarefa = tarefas[index]
+    let tarefa = tarefas[index] // Pega a tarefa pelo índice
 
     document.getElementById("tituloTarefa").value = tarefa.tituloTarefa;
     document.getElementById("descricao").value = tarefa.descricao;
@@ -97,9 +99,9 @@ function editarTarefa(index){
 
 function excluirTarefa(index){
     if(confirm("Deseja excluir esta Tarefa:")){
-        tarefas.splice(index, 1);
+        tarefas.splice(index, 1); // Remove do array
         salvarLocal();
-        listarTarefas();
+        listarTarefas(); // Atualiza tabela
     }
 }
 
