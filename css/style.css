@@ -4,26 +4,48 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box; /*faz padding e border não aumentarem o tamanho total*/
 }
 
 body{
+    display: flex; /*ativa flexbox*/
+    flex-direction: column; /*organiza elementos em coluna*/
+    min-height: 100vh; /*altura mínima da tela inteira*/
+
     width: 100vw;
-    height: 100vh;
     background-color: gray;
     color: black;
-    background-image: url(../img/background-mobile.jpg);   
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../img/background-mobile.jpg); /*imagem de fundo*/
+    background-repeat: no-repeat; /*evita repetição da imagem*/
+    background-size: cover; /*faz imagem cobrir toda a tela*/
 }
 
-/*main*/
 main{
-    text-align: center;
+    display: flex; /*usei flex pra organizar o conteúdo*/
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1; /*faz o main crescer e ocupar o espaço*/
+
+    text-align: center; /*centraliza o texto*/
     padding: 10px;
+    border-radius: 20px; /*deixa as bordas arredondadas*/
 }
 
+h1, p{
+    color: black;
+    font-weight: bold; /*deixei em negrito*/
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8); /*sombra pra destacar*/
+    transition: 0.2s;
+}
 
+/*quando passa o mouse muda a cor*/
+.task:hover, .slogan:hover{
+    color: yellow;
+    text-shadow: 2px 2px 5px black;
+}
+
+/*espaço entre os campos titulo tarefa e descrição*/
 .campo{
     margin: 10px;
 }
@@ -43,8 +65,6 @@ textarea {
     border: 2px solid black;
 }
 
-
-
 button {
     border: none;
     width: 95px;
@@ -57,12 +77,21 @@ button {
     margin-left: 3px;
 }
 
+/*muda a cor do botão quando passar o mouse*/
 button:hover{
-    background-color: gray;   
+    background-color: yellow;
+    color: black;
+    transition: 0.2s; /*animação*/
+    transform: scale(1.05); /*da um leve zoom*/
 }
 
 .buscar-tarefa{
-    padding: 10px;
+    display: flex; /*usei flex pra alinhar */
+    justify-content: center; /*centraliza na horizontal */
+    align-items: center; /*centraliza na vertical*/
+    gap: 10px; /*espaço entre os itens*/
+
+    padding: 10px; /*espaço interno*/
 }
 
 .buscar-tarefa > input{
@@ -73,22 +102,50 @@ button:hover{
 
 /*cor da letra e padding da tabela*/
 .tabela > thead > tr > th{
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
+}
+
+
+td:last-child {
+    display: flex; /*usei flex pra alinhar os botões*/
+    justify-content: center;
+    gap: 5px;
 }
 
 /*deixa a tabela responsiva*/
 .responsive-table{
     width: 100%;
     margin: auto;
-    overflow-x: auto;
-    background-color: rgba(128, 128, 128, 0.308);
+    overflow-x: auto; /*permite rolar se ficar grande*/
+    background-color: rgba(128, 128, 128, 0.781);
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 10px; /*espaço acima*/
 }
 
 
 /*Faz os titulos da tabela ficar centralizado*/
 table{
     margin: auto; /*centraliza a tabela*/
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+    color: black;
+    font-size: 15px;
+    background-color: rgba(22, 22, 22, 0.247);
+}
+
+footer a {
+    text-decoration: none; /*tira o sublinhado*/
+    font-weight: bold;
+    color: black;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #EACC27; /*muda cor quando passa o mouse*/
+    transition: 0.2s; /*animação suave*/
 }

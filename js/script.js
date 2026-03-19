@@ -20,7 +20,7 @@ let tarefa = {
     descricao: descricao,
     data: data,  
     prioridade: prioridade,
-    status: "Pendente" // Faz começar toda tarefa como pendente
+    status: "🔄" // Faz começar toda tarefa como pendente
 };
 
 // Se caso estiver vazio séra uma nova tarefa
@@ -105,7 +105,7 @@ function excluirTarefa(index){
 
 
 function concluirTarefa(index){
-    tarefas[index].status = "Concluida"; // Altera o status da tarefa
+    tarefas[index].status = "✅"; // Altera o status da tarefa
     salvarLocal();
     listarTarefas();
 }

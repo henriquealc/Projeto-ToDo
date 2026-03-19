@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema ToDo List</title>
+    <title>EasyTask - Simples. Rápido. EasyTask.</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-query.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -11,7 +11,8 @@
 </head>
 <body>
     <main>
-        <h1>Sistema de Lista de Tarefas</h1>
+        <h1 class="task">EasyTask</h1>
+        <p class="slogan">Sua lista de tarefas simples e eficiente</p>
         <form id="formToDo">
             <input type="hidden" id="index"> <!--usado para quando for editar um tarefa existente, hidden faz o usuario não ver o campo na tela-->
             <div class="campo">
@@ -26,9 +27,9 @@
             
             <select id="prioridade" required>
                 <option value="" disabled selected>Prioridade</option>            
-                <option value="baixa">Baixa</option>
-                <option value="media">Média</option>
-                <option value="alta">Alta</option>
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
             </select>
             <button type="submit" title="Salvar"><i class="fa-solid fa-plus"></i></button>
         </form>
@@ -56,6 +57,7 @@
             </table>
         </div>
     </main>
+    <footer><p>Desenvolvido por <a href="https://www.linkedin.com/in/henriquealc/" target="_blank">Henrique Alcântara</a> | RU: 5209545</p></footer>
     <script src="js/script.js"></script>
 </body>
 </html>
