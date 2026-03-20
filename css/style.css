@@ -20,6 +20,14 @@ body{
     background-size: cover; /*faz imagem cobrir toda a tela*/
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 main{
     display: flex; /*usei flex pra organizar o conteúdo*/
     flex-direction: column;
