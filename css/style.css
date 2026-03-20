@@ -33,7 +33,7 @@ main{
 }
 
 h1, p{
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold; /*deixei em negrito*/
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8); /*sombra pra destacar*/
     transition: 0.2s;
@@ -55,7 +55,7 @@ h1, p{
     width: 300px;
     height: 30px;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
 } 
 
 textarea {
