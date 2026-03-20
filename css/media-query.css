@@ -21,6 +21,10 @@ Grandes telas: acima de 1200px
         background-position: center center; /*centraliza*/
     }
 
+    footer{
+        background-color: rgba(22, 22, 22, 0.247)
+    }
+
 }
 
 /*Desktop*/
@@ -37,6 +41,11 @@ Grandes telas: acima de 1200px
     .responsive-table{
     width: 70vw; /*faz a tabela ocupa 70% da largura da tela*/
     }
+
+    footer{
+        background-color: rgba(22, 22, 22, 0.247)
+    }
+
 }
 
 /*Grandes telas*/
@@ -53,5 +62,10 @@ Grandes telas: acima de 1200px
     .responsive-table{
     width: 70vw; /*faz a tabela ocupa 70% da largura da tela*/
     }
+
+    footer{
+        background-color: rgba(22, 22, 22, 0.247)
+    }
+
 
 }

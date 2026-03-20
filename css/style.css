@@ -13,7 +13,7 @@ body{
     min-height: 100vh; /*altura mínima da tela inteira*/
 
     width: 100vw;
-    background-color: gray;
+    background-color: #D9D8DC;
     color: black;
     background-image: url(../img/background-mobile.jpg); /*imagem de fundo*/
     background-repeat: no-repeat; /*evita repetição da imagem*/
@@ -89,7 +89,6 @@ button:hover{
     display: flex; /*usei flex pra alinhar */
     justify-content: center; /*centraliza na horizontal */
     align-items: center; /*centraliza na vertical*/
-    gap: 10px; /*espaço entre os itens*/
 
     padding: 10px; /*espaço interno*/
 }
@@ -131,11 +130,12 @@ table{
 }
 
 footer{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+
     padding: 5px;
     color: black;
     font-size: 15px;
-    background-color: rgba(22, 22, 22, 0.247);
 }
 
 footer a {
