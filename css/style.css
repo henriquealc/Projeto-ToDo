@@ -81,7 +81,7 @@ button {
 button:hover{
     background-color: yellow;
     color: black;
-    transition: 0.2s; /*animação*/
+    transition: 0.3s; /*animação*/
     transform: scale(1.05); /*da um leve zoom*/
 }
 
