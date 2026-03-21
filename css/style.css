@@ -129,13 +129,14 @@ td:last-child {
     overflow-x: auto; /*permite rolar se ficar grande*/
     background-color: rgba(128, 128, 128, 0.781);
     border-radius: 10px;
-    margin-top: 10px; /*espaço acima*/
+    margin-top: 0px; /*espaço acima*/
 }
 
 
 /*Faz os titulos da tabela ficar centralizado*/
 table{
     margin: auto; /*centraliza a tabela*/
+    padding: 5px;
 }
 
 footer{
